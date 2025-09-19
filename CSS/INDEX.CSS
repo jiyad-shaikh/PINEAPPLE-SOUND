@@ -1,0 +1,3 @@
+/* css/index.css */
+/* Home-specific overrides (kept minimal) */
+.hero .btn{box-shadow:var(--shadow)}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pricing & Packages — Pineapple Sound</title>
+  <meta name="description" content="Transparent sound equipment rental pricing. 3‑day week billing. Packages for documentary, narrative, and interview/ENG." />
+  <link rel="canonical" href="./pricing.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/pricing.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><div class="brand-badge">🍍</div><span>Pineapple Sound</span></a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rental-process.html">Process</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="badge" href="booking.html">Quote <span id="quote-count">0</span></a>
+        <button class="mobile-toggle" data-nav-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="kicker">Pricing</div>
+      <h1 class="m0">Packages & day rates</h1>
+      <p class="dim mt8">3‑day week billing (7 days possession). Long‑term discounts available.</p>
+
+      <div class="grid grid-3 mt16">
+        <div class="card">
+          <h3>Doc Run‑n‑Gun Kit</h3>
+          <div class="dim">from $150/day</div>
+          <ul class="mt12 dim small">
+            <li>MixPre‑10 II or F8n</li>
+            <li>MKH 416 + boom</li>
+            <li>2x wireless + lavs</li>
+            <li>Bag, power, media</li>
+          </ul>
+          <button class="btn btn-primary mt12" data-add-quote data-id="pkg-doc" data-name="Doc Run‑n‑Gun Kit">Add to Quote</button>
+        </div>
+        <div class="card">
+          <h3>Narrative Bag Kit</h3>
+          <div class="dim">from $285/day</div>
+          <ul class="mt12 dim small">
+            <li>SD 833</li>
+            <li>Schoeps MK41 + 416</li>
+            <li>4x wireless + lavs</li>
+            <li>Timecode (pair)</li>
+          </ul>
+          <button class="btn btn-primary mt12" data-add-quote data-id="pkg-narr" data-name="Narrative Bag Kit">Add to Quote</button>
+        </div>
+        <div class="card">
+          <h3>ENG Interview Kit</h3>
+          <div class="dim">from $180/day</div>
+          <ul class="mt12 dim small">
+            <li>MixPre‑6 II</li>
+            <li>MKH 50 or 416</li>
+            <li>2x wireless (handheld+lav)</li>
+            <li>Stands, cables</li>
+          </ul>
+          <button class="btn btn-primary mt12" data-add-quote data-id="pkg-eng" data-name="ENG Interview Kit">Add to Quote</button>
+        </div>
+      </div>
+
+      <div class="card mt24">
+        <h3 class="m0">Rate Policy</h3>
+        <ul class="dim mt12">
+          <li>Day = 24 hours. Week billed as 3 days. Month billed as 9 days.</li>
+          <li>Insurance/COI may be required for certain packages.</li>
+          <li>Delivery/pickup available; quoted per distance/time.</li>
+        </ul>
+      </div>
+
+      <div class="center mt24">
+        <a class="btn btn-primary" href="booking.html">Build Your Quote</a>
+        <a class="btn btn-ghost" href="equipment.html">See Individual Items</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container spread">
+      <div>© <span id="year"></span> Pineapple Sound</div>
+      <div class="small"><a href="faq.html">FAQ</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pricing.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+/* css/booking.css */
+#quote-list li{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0; border-bottom:1px dashed var(--border)}
+#quote-list li:last-child{border-bottom:0}
+.remove{color:#ef4444; font-weight:700; cursor:pointer}

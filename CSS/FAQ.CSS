@@ -1,0 +1,4 @@
+/* css/faq.css */
+.faq{background:#fff; border:1px solid var(--border); border-radius:14px; padding:10px 14px; margin-bottom:10px}
+.faq summary{cursor:pointer; font-weight:700}
+.faq div{color:#475569; margin-top:8px}

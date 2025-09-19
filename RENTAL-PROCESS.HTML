@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rental Process — Pineapple Sound</title>
+  <meta name="description" content="How rentals work at Pineapple Sound: request, confirm, pickup/delivery, on‑set support, and returns." />
+  <link rel="canonical" href="./rental-process.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/rental-process.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><div class="brand-badge">🍍</div><span>Pineapple Sound</span></a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rental-process.html">Process</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="badge" href="booking.html">Quote <span id="quote-count">0</span></a>
+        <button class="mobile-toggle" data-nav-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="kicker">Process</div>
+      <h1>From request to return</h1>
+
+      <div class="grid grid-4 mt16">
+        <div class="card">
+          <h3>1. Request</h3>
+          <p class="dim">Send dates, kit list, or choose a package. We’ll confirm availability the same day.</p>
+        </div>
+        <div class="card">
+          <h3>2. Prep</h3>
+          <p class="dim">We clean, label, and test everything. Media formatted, firmware checked, timecode ready.</p>
+        </div>
+        <div class="card">
+          <h3>3. Pickup/Delivery</h3>
+          <p class="dim">Pickup at our location or schedule delivery. ID and payment due at checkout.</p>
+        </div>
+        <div class="card">
+          <h3>4. Support & Return</h3>
+          <p class="dim">Remote tech support available. Return during business hours; quick check‑in.</p>
+        </div>
+      </div>
+
+      <div class="card mt24">
+        <h3 class="m0">Requirements</h3>
+        <ul class="mt12 dim">
+          <li>Government ID and valid payment method</li>
+          <li>COI for productions is recommended/required for larger kits</li>
+          <li>Full replacement value responsibility while out</li>
+        </ul>
+      </div>
+
+      <div class="center mt24">
+        <a class="btn btn-primary" href="booking.html">Start a Booking</a>
+        <a class="btn btn-ghost" href="faq.html">Read FAQs</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container spread">
+      <div>© <span id="year"></span> Pineapple Sound</div>
+      <div class="small"><a href="pricing.html">Pricing</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/rental-process.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

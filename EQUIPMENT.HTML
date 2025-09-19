@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Equipment Rentals — Pineapple Sound</title>
+  <meta name="description" content="Browse pro film sound rentals: recorders, mixers, wireless, shotgun mics, timecode, and accessories. Add items to your quote." />
+  <link rel="canonical" href="./equipment.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/equipment.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><div class="brand-badge">🍍</div><span>Pineapple Sound</span></a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rental-process.html">Process</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="badge" href="booking.html">Quote <span id="quote-count">0</span></a>
+        <button class="mobile-toggle" data-nav-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="spread">
+        <div>
+          <div class="kicker">Equipment</div>
+          <h1 class="m0">Pro sound gear for film</h1>
+          <div class="dim mt8">Add items to your quote—final availability confirmed on request.</div>
+        </div>
+        <a class="btn btn-primary" href="booking.html">View Quote</a>
+      </div>
+
+      <div class="card mt16">
+        <div class="form-row">
+          <div>
+            <label for="f-cat">Category</label>
+            <select id="f-cat">
+              <option value="all">All</option>
+              <option>Recorders</option>
+              <option>Wireless</option>
+              <option>Shotgun Mics</option>
+              <option>Lav Mics</option>
+              <option>Timecode</option>
+              <option>IFB/Comms</option>
+              <option>Accessories</option>
+            </select>
+          </div>
+          <div>
+            <label for="f-brand">Brand</label>
+            <select id="f-brand">
+              <option value="all">All</option>
+              <option>Sound Devices</option>
+              <option>Sennheiser</option>
+              <option>Lectrosonics</option>
+              <option>Schoeps</option>
+              <option>Sanken</option>
+              <option>Wisycom</option>
+              <option>Tentacle</option>
+              <option>Denecke</option>
+              <option>Comtek</option>
+              <option>K-Tek</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt12">
+          <label for="f-search">Search</label>
+          <input class="input" id="f-search" type="search" placeholder="Try: 833, MKH 416, COS‑11D" />
+        </div>
+      </div>
+
+      <div class="grid grid-3 mt16" id="equipment-list">
+        <!-- Example items (add more as needed) -->
+        <article class="card item" data-category="Recorders" data-brand="Sound Devices" data-name="Sound Devices 833" data-price="140" data-id="sd833">
+          <h3>Sound Devices 833</h3>
+          <div class="dim small">Recorder/Mixer — $140/day</div>
+          <ul class="small mt8 dim">
+            <li>8-channel, 6 preamps</li>
+            <li>Bag, media, power</li>
+          </ul>
+          <div class="mt12 spread">
+            <span class="tag">Recorders</span>
+            <button class="btn btn-primary" data-add-quote data-id="sd833" data-name="Sound Devices 833">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Recorders" data-brand="Sound Devices" data-name="Sound Devices MixPre-10 II" data-price="95" data-id="mp10">
+          <h3>Sound Devices MixPre‑10 II</h3>
+          <div class="dim small">Recorder/Mixer — $95/day</div>
+          <ul class="small mt8 dim">
+            <li>10-track, Kashmir preamps</li>
+            <li>Bag, media, power</li>
+          </ul>
+          <div class="mt12 spread">
+            <span class="tag">Recorders</span>
+            <button class="btn btn-primary" data-add-quote data-id="mp10" data-name="MixPre‑10 II">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Wireless" data-brand="Lectrosonics" data-name="Lectrosonics UCR/SMQV kit" data-price="75" data-id="lectro-kit">
+          <h3>Lectrosonics UCR/SMQV Kit</h3>
+          <div class="dim small">1 Tx + 1 Rx — $75/day</div>
+          <ul class="small mt8 dim"><li>Block per availability</li><li>Cables, clips, lav</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Wireless</span>
+            <button class="btn btn-primary" data-add-quote data-id="lectro-kit" data-name="Lectrosonics Kit">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Wireless" data-brand="Sennheiser" data-name="Sennheiser G4 Kit" data-price="40" data-id="g4">
+          <h3>Sennheiser G4 Kit</h3>
+          <div class="dim small">1 Tx + 1 Rx — $40/day</div>
+          <ul class="small mt8 dim"><li>EW100 G4</li><li>Clips, lav, cables</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Wireless</span>
+            <button class="btn btn-primary" data-add-quote data-id="g4" data-name="Sennheiser G4 Kit">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Shotgun Mics" data-brand="Sennheiser" data-name="Sennheiser MKH 416" data-price="35" data-id="mkh416">
+          <h3>Sennheiser MKH 416</h3>
+          <div class="dim small">Shotgun — $35/day</div>
+          <ul class="small mt8 dim"><li>Shock, zeppelin, windjammer</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Shotgun Mics</span>
+            <button class="btn btn-primary" data-add-quote data-id="mkh416" data-name="Sennheiser MKH 416">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Shotgun Mics" data-brand="Schoeps" data-name="Schoeps CMC6 + MK41" data-price="65" data-id="schoeps41">
+          <h3>Schoeps CMC6 + MK41</h3>
+          <div class="dim small">Supercardioid — $65/day</div>
+          <ul class="small mt8 dim"><li>Shock & wind protection</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Shotgun Mics</span>
+            <button class="btn btn-primary" data-add-quote data-id="schoeps41" data-name="Schoeps CMC6 + MK41">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Lav Mics" data-brand="Sanken" data-name="Sanken COS‑11D" data-price="20" data-id="cos11">
+          <h3>Sanken COS‑11D</h3>
+          <div class="dim small">Lavalier — $20/day</div>
+          <ul class="small mt8 dim"><li>Terminated per pack</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Lav Mics</span>
+            <button class="btn btn-primary" data-add-quote data-id="cos11" data-name="Sanken COS‑11D">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Timecode" data-brand="Tentacle" data-name="Tentacle Sync E (pair)" data-price="30" data-id="tentacle">
+          <h3>Tentacle Sync E (pair)</h3>
+          <div class="dim small">Timecode — $30/day</div>
+          <ul class="small mt8 dim"><li>Cables per camera</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Timecode</span>
+            <button class="btn btn-primary" data-add-quote data-id="tentacle" data-name="Tentacle Sync E (pair)">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="IFB/Comms" data-brand="Comtek" data-name="Comtek PR‑216 (Tx + 2 Rx)" data-price="28" data-id="comtek">
+          <h3>Comtek PR‑216 (Tx + 2 Rx)</h3>
+          <div class="dim small">IFB — $28/day</div>
+          <ul class="small mt8 dim"><li>2 x Rx, 1 x Tx, earbuds</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">IFB/Comms</span>
+            <button class="btn btn-primary" data-add-quote data-id="comtek" data-name="Comtek PR‑216 Kit">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Accessories" data-brand="K-Tek" data-name="K‑Tek Boom Pole" data-price="18" data-id="ktek">
+          <h3>K‑Tek Boom Pole</h3>
+          <div class="dim small">Carbon Fiber — $18/day</div>
+          <ul class="small mt8 dim"><li>Internal coiled XLR</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Accessories</span>
+            <button class="btn btn-primary" data-add-quote data-id="ktek" data-name="K‑Tek Boom Pole">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Accessories" data-brand="Denecke" data-name="Denecke TS‑3 Slate" data-price="35" data-id="ts3">
+          <h3>Denecke TS‑3 Slate</h3>
+          <div class="dim small">Timecode Slate — $35/day</div>
+          <ul class="small mt8 dim"><li>Sync cables included</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Accessories</span>
+            <button class="btn btn-primary" data-add-quote data-id="ts3" data-name="Denecke TS‑3 Slate">Add to Quote</button>
+          </div>
+        </article>
+
+        <article class="card item" data-category="Wireless" data-brand="Wisycom" data-name="Wisycom Wireless Kit" data-price="85" data-id="wisy">
+          <h3>Wisycom Wireless Kit</h3>
+          <div class="dim small">1 Tx + 1 Rx — $85/day</div>
+          <ul class="small mt8 dim"><li>Wideband, lav, clips</li></ul>
+          <div class="mt12 spread">
+            <span class="tag">Wireless</span>
+            <button class="btn btn-primary" data-add-quote data-id="wisy" data-name="Wisycom Wireless Kit">Add to Quote</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="center mt24">
+        <a class="btn btn-primary" href="booking.html">Proceed to Booking</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container spread">
+      <div>© <span id="year"></span> Pineapple Sound</div>
+      <div class="small"><a href="contact.html">Contact</a> · <a href="faq.html">FAQ</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/equipment.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

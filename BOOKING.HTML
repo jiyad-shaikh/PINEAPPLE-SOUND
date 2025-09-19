@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking & Quote — Pineapple Sound</title>
+  <meta name="description" content="Build your quote and request availability for your shoot dates. We confirm fast and prep your kit." />
+  <link rel="canonical" href="./booking.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/booking.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><div class="brand-badge">🍍</div><span>Pineapple Sound</span></a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rental-process.html">Process</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <span class="badge">Quote <span id="quote-count">0</span></span>
+        <button class="mobile-toggle" data-nav-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="kicker">Booking</div>
+      <h1 class="m0">Build your quote</h1>
+      <p class="dim mt8">Submit your dates—our team will confirm availability and finalize pricing.</p>
+
+      <div class="grid" style="grid-template-columns:1.1fr .9fr; gap:18px; align-items:start">
+        <div class="card">
+          <h3 class="m0">Your Quote</h3>
+          <div id="quote-empty" class="dim small mt12">No items yet. Add gear from the equipment or pricing pages.</div>
+          <ul id="quote-list" class="mt12" style="list-style:none; padding-left:0"></ul>
+          <div class="hr"></div>
+          <div class="spread small">
+            <div class="dim">This is an estimate. We’ll confirm final rates.</div>
+            <button id="clear-quote" class="btn btn-ghost small">Clear</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="m0">Request Details</h3>
+          <form class="mt12" data-simple-form id="booking-form">
+            <div class="form-row">
+              <div>
+                <label for="name">Full Name</label>
+                <input class="input" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="company">Company</label>
+                <input class="input" id="company" name="company" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="email">Email</label>
+                <input class="input" id="email" type="email" name="email" required />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input class="input" id="phone" type="tel" name="phone" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="shoot-start">Start Date</label>
+                <input class="input" id="shoot-start" type="date" required />
+              </div>
+              <div>
+                <label for="shoot-end">End Date</label>
+                <input class="input" id="shoot-end" type="date" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="pickup">Logistics</label>
+                <select id="pickup" class="input">
+                  <option>Pickup</option>
+                  <option>Delivery (Quote)</option>
+                </select>
+              </div>
+              <div>
+                <label for="location">Location</label>
+                <input class="input" id="location" placeholder="[Your City]" />
+              </div>
+            </div>
+            <div class="mt12">
+              <label for="notes">Notes (gear details, timecode needs, camera)</label>
+              <textarea id="notes" class="input" rows="4"></textarea>
+              <div class="help">We’ll include media, power, and common cables by default.</div>
+            </div>
+            <div class="mt16">
+              <label><input type="checkbox" id="agree" required /> I agree to be responsible for rented gear and return on time.</label>
+            </div>
+            <div class="mt16">
+              <button class="btn btn-primary" type="submit">Request Quote</button>
+              <div class="form-success mt12 small dim" hidden>Thanks! We’ll reply shortly to confirm availability.</div>
+            </div>
+          </form>
+          <div class="small dim mt16">Tip: For email delivery, connect this form to Formspree or Netlify Forms.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container spread">
+      <div>© <span id="year"></span> Pineapple Sound</div>
+      <div class="small"><a href="faq.html">FAQ</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

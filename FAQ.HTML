@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — Pineapple Sound</title>
+  <meta name="description" content="Frequently asked questions about Pineapple Sound rentals: insurance, billing, pickup/delivery, cancellations, and more." />
+  <link rel="canonical" href="./faq.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/faq.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><div class="brand-badge">🍍</div><span>Pineapple Sound</span></a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rental-process.html">Process</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="badge" href="booking.html">Quote <span id="quote-count">0</span></a>
+        <button class="mobile-toggle" data-nav-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="kicker">FAQ</div>
+      <h1 class="m0">Common questions</h1>
+
+      <div class="mt16">
+        <details class="faq"><summary>How does 3‑day week billing work?</summary><div>Keep gear for 7 calendar days and pay 3x the day rate.</div></details>
+        <details class="faq"><summary>Do I need insurance?</summary><div>For larger packages we require a COI naming Pineapple Sound as loss payee. For small kits we may accept a higher deposit.</div></details>
+        <details class="faq"><summary>Can you deliver?</summary><div>Yes. Delivery and pickup are available; pricing depends on distance and timing.</div></details>
+        <details class="faq"><summary>What if something fails on set?</summary><div>Call us immediately. We’ll troubleshoot and arrange swap‑outs when possible.</div></details>
+        <details class="faq"><summary>Do you rent crew?</summary><div>We can refer mixers/boom ops and coordinate packages with crew.</div></details>
+        <details class="faq"><summary>Do you charge for weekends?</summary><div>Weekend possession typically counts as part of the 3‑day week; ask us for your schedule.</div></details>
+        <details class="faq"><summary>What’s your cancellation policy?</summary><div>Cancellations within 24 hours of pickup may incur a 1‑day charge. Large holds may require deposits.</div></details>
+        <details class="faq"><summary>Are batteries and media included?</summary><div>We include basic media and rechargeable power. Single‑use batteries and expendables can be added to your order.</div></details>
+        <details class="faq"><summary>Do you support timecode jamming?</summary><div>Yes—bring your cameras or request jamming on pickup.</div></details>
+      </div>
+
+      <div class="center mt24">
+        <a class="btn btn-primary" href="booking.html">Start a Booking</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container spread">
+      <div>© <span id="year"></span> Pineapple Sound</div>
+      <div class="small"><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/faq.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

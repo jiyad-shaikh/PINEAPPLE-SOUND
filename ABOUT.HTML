@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Pineapple Sound</title>
+  <meta name="description" content="Pineapple Sound provides professional sound equipment rentals for film, TV, and commercials. Set‑ready kits, fast turnarounds." />
+  <link rel="canonical" href="./about.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><div class="brand-badge">🍍</div><span>Pineapple Sound</span></a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rental-process.html">Process</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="badge" href="booking.html">Quote <span id="quote-count">0</span></a>
+        <button class="mobile-toggle" data-nav-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="kicker">About</div>
+      <h1>We’re sound people who love set days</h1>
+      <div class="grid" style="grid-template-columns:1.2fr .8fr; gap:18px">
+        <div class="card">
+          <p class="dim">Pineapple Sound rents professional audio gear for productions of all sizes. We focus on clean, reliable kits and fast, friendly service so your set runs smoothly.</p>
+          <ul class="dim">
+            <li>Rigged & labeled bags and carts</li>
+            <li>Firmware‑matched wireless & timecode</li>
+            <li>On‑set support and flexible logistics</li>
+          </ul>
+          <a class="btn btn-primary mt12" href="equipment.html">See Equipment</a>
+        </div>
+        <div class="card">
+          <h3 class="m0">Quick facts</h3>
+          <ul class="mt12 dim">
+            <li>Based in [Your City], serving surrounding regions</li>
+            <li>Same‑day rentals available</li>
+            <li>3‑day week billing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="center mt24">
+        <a class="btn btn-ghost" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container spread">
+      <div>© <span id="year"></span> Pineapple Sound</div>
+      <div class="small"><a href="faq.html">FAQ</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

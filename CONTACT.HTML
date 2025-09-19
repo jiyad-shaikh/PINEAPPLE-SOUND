@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Pineapple Sound</title>
+  <meta name="description" content="Contact Pineapple Sound for equipment availability, quotes, and support." />
+  <link rel="canonical" href="./contact.html" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><div class="brand-badge">🍍</div><span>Pineapple Sound</span></a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="rental-process.html">Process</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="badge" href="booking.html">Quote <span id="quote-count">0</span></a>
+        <button class="mobile-toggle" data-nav-toggle aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="kicker">Contact</div>
+      <h1 class="m0">Let’s get you set up</h1>
+
+      <div class="grid" style="grid-template-columns:1.1fr .9fr; gap:18px">
+        <div class="card">
+          <h3 class="m0">Message us</h3>
+          <form class="mt12" data-simple-form>
+            <div class="form-row">
+              <div><label for="cname">Name</label><input class="input" id="cname" required /></div>
+              <div><label for="cemail">Email</label><input class="input" id="cemail" type="email" required /></div>
+            </div>
+            <div class="form-row">
+              <div><label for="cphone">Phone</label><input class="input" id="cphone" type="tel" /></div>
+              <div><label for="csubject">Subject</label><input class="input" id="csubject" /></div>
+            </div>
+            <div class="mt12"><label for="cmsg">Message</label><textarea id="cmsg" class="input" rows="4" required></textarea></div>
+            <div class="mt16">
+              <button class="btn btn-primary">Send</button>
+              <div class="form-success mt12 small dim" hidden>Thanks! We’ll be in touch.</div>
+            </div>
+          </form>
+        </div>
+        <div class="card">
+          <h3 class="m0">Direct</h3>
+          <p class="dim mt12">
+            Email: <a href="mailto:email@pineapplesound.com">email@pineapplesound.com</a><br/>
+            Phone: <a href="tel:+10000000000">+1 (000) 000‑0000</a><br/>
+            Address: [Your Address], [Your City]
+          </p>
+          <div class="hr"></div>
+          <p class="small dim">Hours: Mon–Fri 9a–6p, Sat 10a–2p. Closed Sunday. Same‑day available—call first.</p>
+          <a class="btn btn-ghost" href="booking.html">Start a Booking</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container spread">
+      <div>© <span id="year"></span> Pineapple Sound</div>
+      <div class="small"><a href="faq.html">FAQ</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
