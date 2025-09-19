@@ -73,3 +73,11 @@
   });
 
 })();
+
+// Fix scroll offset for sticky header
+if (location.hash) {
+  setTimeout(() => {
+    const el = document.querySelector(location.hash);
+    if (el) window.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' });
+  }, 100);
+}

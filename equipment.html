@@ -40,43 +40,45 @@
         <a class="btn btn-primary" href="booking.html">View Quote</a>
       </div>
 
-      <div class="card mt16">
-        <div class="form-row">
-          <div>
-            <label for="f-cat">Category</label>
-            <select id="f-cat">
-              <option value="all">All</option>
-              <option>Recorders</option>
-              <option>Wireless</option>
-              <option>Shotgun Mics</option>
-              <option>Lav Mics</option>
-              <option>Timecode</option>
-              <option>IFB/Comms</option>
-              <option>Accessories</option>
-            </select>
-          </div>
-          <div>
-            <label for="f-brand">Brand</label>
-            <select id="f-brand">
-              <option value="all">All</option>
-              <option>Sound Devices</option>
-              <option>Sennheiser</option>
-              <option>Lectrosonics</option>
-              <option>Schoeps</option>
-              <option>Sanken</option>
-              <option>Wisycom</option>
-              <option>Tentacle</option>
-              <option>Denecke</option>
-              <option>Comtek</option>
-              <option>K-Tek</option>
-            </select>
-          </div>
-        </div>
-        <div class="mt12">
-          <label for="f-search">Search</label>
-          <input class="input" id="f-search" type="search" placeholder="Try: 833, MKH 416, COS‑11D" />
-        </div>
+    <div class="card mt16" id="equipment-filters">
+  <div style="min-width:500px; padding:0 10px">
+    <div class="form-row">
+      <div>
+        <label for="f-cat">Category</label>
+        <select id="f-cat" class="input">
+          <option value="all">All</option>
+          <option>Recorders</option>
+          <option>Wireless</option>
+          <option>Shotgun Mics</option>
+          <option>Lav Mics</option>
+          <option>Timecode</option>
+          <option>IFB/Comms</option>
+          <option>Accessories</option>
+        </select>
       </div>
+      <div>
+        <label for="f-brand">Brand</label>
+        <select id="f-brand" class="input">
+          <option value="all">All</option>
+          <option>Sound Devices</option>
+          <option>Sennheiser</option>
+          <option>Lectrosonics</option>
+          <option>Schoeps</option>
+          <option>Sanken</option>
+          <option>Wisycom</option>
+          <option>Tentacle</option>
+          <option>Denecke</option>
+          <option>Comtek</option>
+          <option>K-Tek</option>
+        </select>
+      </div>
+    </div>
+    <div class="mt12">
+      <label for="f-search">Search Gear</label>
+      <input class="input" id="f-search" type="search" placeholder="e.g., 833, MKH 416, COS‑11D" />
+    </div>
+  </div>
+</div>
 
       <div class="grid grid-3 mt16" id="equipment-list">
         <!-- Example items (add more as needed) -->
