@@ -1,22 +1,38 @@
 // js/main.js
 (function(){
-  // Mobile nav toggle + lock scroll
-  const toggle = document.querySelector('[data-nav-toggle]');
-  const nav = document.querySelector('[data-nav]');
-  function setNav(open){
-    if (!nav) return;
-    nav.classList.toggle('open', open);
-    if (toggle) toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    document.body.style.overflow = open ? 'hidden' : '';
-  }
-  if (toggle && nav){
-    toggle.addEventListener('click', ()=> setNav(!nav.classList.contains('open')));
-    // Close nav when a link is clicked (mobile UX)
-    nav.addEventListener('click', (e)=>{
-      const a = e.target.closest('a');
-      if (a && nav.classList.contains('open')) setNav(false);
+  // Mobile nav toggle — FIXED & ENHANCED
+const toggles = document.querySelectorAll('[data-nav-toggle]');
+const nav = document.getElementById('main-nav'); // 👈 More reliable than querySelector
+
+function setNav(open){
+  if (!nav) return;
+  nav.classList.toggle('open', open);
+  toggles.forEach(t => t.setAttribute('aria-expanded', open ? 'true' : 'false'));
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+
+if (nav){
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setNav(!nav.classList.contains('open'));
     });
-  }
+  });
+
+  // Close when clicking a nav link
+  nav.addEventListener('click', (e) => {
+    if (e.target.closest('a') || e.target.classList.contains('mobile-close')) {
+      setNav(false);
+    }
+  });
+
+  // Close if click outside
+  document.addEventListener('click', (e) => {
+    if (nav.classList.contains('open') && !nav.contains(e.target) && !Array.from(toggles).some(t => t.contains(e.target))) {
+      setNav(false);
+    }
+  });
+}
 
   // Highlight active nav link
   const filename = location.pathname.split('/').pop() || 'index.html';
